@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSSD 器械消毒追溯系统</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div id="login-view" class="login-wrap">
+  <div class="login-card">
+    <div class="brand">
+      <div class="logo">✚</div>
+      <div>
+        <h1>区域消毒供应中心</h1>
+        <p>器械消毒追溯管理系统 CSSD Trace</p>
+      </div>
+    </div>
+    <div class="form-row"><label>用户名</label><input id="login-username" value="supervisor" autocomplete="username"></div>
+    <div class="form-row"><label>密码</label><input id="login-password" type="password" value="123456" autocomplete="current-password"></div>
+    <button class="btn primary block" id="login-btn">登 录</button>
+    <div class="login-hint">
+      <b>演示账号（密码均为 123456）</b>
+      <span>操作员 operator / 张操作</span>
+      <span>审核人 reviewer / 刘放行</span>
+      <span>督导员 supervisor / 周督导</span>
+      <span>诊所端 clinic1 / clinic2 / clinic3</span>
+    </div>
+  </div>
+</div>
+
+<div id="app-view" class="app" style="display:none">
+  <aside class="sidebar">
+    <div class="side-brand">✚ CSSD 追溯</div>
+    <nav id="nav"></nav>
+    <div class="side-foot">感控合规 · 全程留痕</div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <div id="page-title" class="page-title"></div>
+      <div class="top-right">
+        <span id="role-badge" class="badge"></span>
+        <span id="user-name" class="user-name"></span>
+        <button class="btn ghost small" id="logout-btn">退出</button>
+      </div>
+    </header>
+    <section id="content" class="content"></section>
+  </main>
+</div>
+
+<div id="modal-root"></div>
+<div id="toast-root"></div>
+<script src="/app.js"></script>
+</body>
+</html>

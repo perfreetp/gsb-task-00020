@@ -1,0 +1,11 @@
+{
+  "name": "cssd-trace",
+  "version": "1.0.0",
+  "description": "区域消毒供应中心器械消毒追溯系统（CSSD Traceability System）",
+  "type": "commonjs",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "seed": "node server/db.js --seed"
+  }
+}
